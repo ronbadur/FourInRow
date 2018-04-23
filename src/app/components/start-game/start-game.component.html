@@ -1,0 +1,19 @@
+<div class="container">
+  <app-game-details></app-game-details>
+
+  <div *ngIf="winner" class="win">
+    <h2>{{winner}} wins :)</h2>
+  </div>
+
+  <div class="board">
+    <div *ngFor="let row of gameBoard.grid; let i = index" class="row">
+      <div *ngFor="let column of gameBoard.grid[i]" class="cell"
+           (click)="onCellClick(column)" [style.background-color]="getCellColor(column)">
+      </div>
+    </div>
+  </div>
+
+  <div class="new-game">
+    <button (click)="newGame()" class="waves-effect waves-light btn">New Game</button>
+  </div>
+</div>

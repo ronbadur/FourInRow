@@ -1,0 +1,25 @@
+<div class="player-name">
+
+  <div class="title">
+    <h2>Enter Players name</h2>
+  </div>
+
+  <div class="name-form">
+    <form (ngSubmit)="onSubmit(firstPlayer.value, secondPlayer.value)">
+
+      <div class="input-field col s6">
+        <label for="firstPlayer">First Player Name</label>
+        <input #firstPlayer id="firstPlayer" name="firstPlayer" type="text" class="validate">
+      </div>
+
+      <div class="input-field col s6">
+        <label for="secondPlayer">Second Player Name</label>
+        <input #secondPlayer id="secondPlayer" name="secondPlayer" type="text" class="validate">
+      </div>
+
+      <button type="submit" class="waves-effect waves-light btn">Start</button>
+    </form>
+  </div>
+
+</div>
+
