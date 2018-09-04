@@ -22,4 +22,8 @@ export class MultiplePlayersFormComponent implements OnInit {
     this.router.navigateByUrl('/startGame');
   }
 
+  public OnBackClick() {
+    this.router.navigateByUrl('/gameOptions');
+  }
+
 }

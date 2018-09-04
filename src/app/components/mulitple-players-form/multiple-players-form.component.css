@@ -17,3 +17,8 @@ h2 {
   margin: 0 0 24px;
   text-shadow: 1px 1px 1px #082b34;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+}

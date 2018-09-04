@@ -10,3 +10,12 @@
 h2 {
   margin: 0;
 }
+
+.red-player {
+  border-bottom: 1px solid red;
+}
+
+.black-player {
+  border-bottom: 1px solid black;
+}
+
