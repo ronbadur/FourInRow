@@ -15,6 +15,7 @@ import { GameResultService } from './services/game-result/game-result.service';
 import { GameDetailsComponent } from './components/game-details/game-details.component';
 import { ColorCellService } from './services/color-cell/color-cell.service';
 import { NamePipe } from './pipes/name.pipe';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 
 const appRoutes: Routes = [
   {
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'singlePlayerNameForm',
     component: SinglePlayerFormComponent,
+  },
+  {
+    path: 'instructions',
+    component: InstructionsComponent,
   },
   {
     path: 'gameOptions',
@@ -52,7 +57,8 @@ const appRoutes: Routes = [
     StartGameComponent,
     SinglePlayerFormComponent,
     GameDetailsComponent,
-    NamePipe
+    NamePipe,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
